@@ -30,7 +30,7 @@ plugin_category = "tools"
         "description": "pass username and no of latest messages to check to command \
              so the bot will download media files from that latest no of messages to server ",
         "usage": "{tr}getc count channel_username",
-        "examples": "{tr}getc 10 @catuserbot17",
+        "examples": "{tr}getc 10 @SHIVV",
     },
 )
 async def get_media(event):
@@ -70,7 +70,7 @@ async def get_media(event):
         "description": "pass username to command so the bot will download all media files from that latest no of messages to server ",
         "note": "there is limit of 3000 messages for this process to prevent API limits. that is will download all media files from latest 3000 messages",
         "usage": "{tr}geta channel_username",
-        "examples": "{tr}geta @catuserbot17",
+        "examples": "{tr}geta @SHIVV",
     },
 )
 async def get_media(event):
