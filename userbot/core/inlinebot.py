@@ -43,7 +43,7 @@ tr = Config.COMMAND_HAND_LER
 
 def get_thumb(name=None, url=None):
     if url is None:
-        url = f"https://github.com/TgCatUB/CatUserbot-Resources/blob/master/Resources/Inline/{name}?raw=true"
+        url = f"https://github.com/ItzSHIV/Userbot-Resources/tree/master/Resources/Inline/{name}?raw=true"
     return types.InputWebDocument(
         url=url, size=0, mime_type="image/jpeg", attributes=[]
     )
@@ -133,7 +133,7 @@ async def help_article(event):
     return await build_article(
         event,
         title="Help Menu",
-        description="Help menu for CatUserbot.",
+        description="Help menu for your Userbot Shiv.",
         thumbnail=get_thumb("help.png"),
         text=help_info[0],
         buttons=help_info[1],
@@ -154,7 +154,7 @@ async def filemanager_article(event):
         title="File Manager",
         description=f"Inline file manager\nSyntax: ls (path optional)\nPath:  {path}",
         thumbnail=get_thumb("filemanager.jpg"),
-        media="https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/filemanager.jpg",
+        media="https://github.com/ItzSHIV/Userbot-Resources/blob/master/Resources/Inline/filemanager.jpg",
         text=query,
         buttons=buttons,
     )
@@ -163,16 +163,16 @@ async def filemanager_article(event):
 async def deploy_article(event):
     buttons = [
         (
-            Button.url("Source code", "https://github.com/TgCatUB/catuserbot"),
-            Button.url("Deploy", "https://github.com/TgCatUB/nekopack"),
+            Button.url("Shivv", "https://t.me/Iceyxsm"),
+            Button.url("RRB", "https://t.me/rrbofficialmain"),
         )
     ]
     return await build_article(
         event,
-        title="𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
-        description="Deploy yourself.",
-        media="https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/catlogo.png",
-        text="𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁.",
+        title="RESTRICTED ? TEXT HERE",
+        description="",
+        media="https://github.com/ItzSHIV/Userbot-Resources/blob/master/Resources/Inline/logo.png",
+        text="@Rrb_support_bot.",
         buttons=buttons,
     )
 
@@ -203,7 +203,7 @@ async def age_verification_article(event):
         title="Age verification",
         text="**ARE YOU OLD ENOUGH FOR THIS ?**",
         buttons=buttons,
-        media="https://i.imgur.com/Zg58iXc.jpg",
+        media="",
     )
 
 
@@ -228,7 +228,7 @@ async def vcplayer_article(event):
             text=text,
             description="Manange Vc Stream.",
             buttons=buttons,
-            thumbnail="https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/vcplayer.jpg",
+            thumbnail="https://github.com/ItzSHIV/Userbot-Resources/blob/master/Resources/Inline/vcplayer.jpg",
         )
     except Exception:
         return None
